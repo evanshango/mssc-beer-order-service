@@ -3,11 +3,13 @@ package com.codewithevans.msscbeerorderservice.bootstrap;
 import com.codewithevans.msscbeerorderservice.domain.Customer;
 import com.codewithevans.msscbeerorderservice.repositories.CustomerRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 
+@Slf4j
 @RequiredArgsConstructor
 @Component
 public class BeerOrderBootStrap implements CommandLineRunner {
@@ -20,15 +22,20 @@ public class BeerOrderBootStrap implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        loadCustomerData();
+        try {
+            loadCustomerData();
+        } catch (Exception ex) {
+            throw new Exception(ex);
+        }
     }
 
     private void loadCustomerData() {
         if (customerRepository.count() == 0) {
-            customerRepository.save(Customer.builder()
+            Customer savedCustomer = customerRepository.save(Customer.builder()
                     .customerName(TASTING_ROOM)
                     .apiKey(UUID.randomUUID())
                     .build());
+            log.debug("Tasting room customer Id: " + savedCustomer.getId().toString());
         }
     }
 }
