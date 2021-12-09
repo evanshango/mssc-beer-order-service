@@ -3,6 +3,12 @@ server:
 sfg:
   brewery:
     beer-service-host: http://localhost:8080
+spring:
+  application:
+    name: beer-inventory-service
+  cloud:
+    discovery:
+      enabled: false
 logging:
   level:
     com.codewithevans: debug
