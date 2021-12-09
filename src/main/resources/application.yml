@@ -9,6 +9,8 @@ spring:
   cloud:
     discovery:
       enabled: false
+    config:
+      enabled: false
 logging:
   level:
     com.codewithevans: debug
