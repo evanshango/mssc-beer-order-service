@@ -17,13 +17,13 @@ public class BeerOrderDto extends BaseItem {
     private UUID customerId;
     private String customerRef;
     private List<BeerOrderLineDto> beerOrderLines;
-    private OrderStatusEnum orderStatus;
+    private BeerOrderStatusEnum orderStatus;
     private String orderStatusCallbackUrl;
 
     @Builder
     public BeerOrderDto(
             UUID id, Integer version, OffsetDateTime createdAt, OffsetDateTime updatedAt, UUID customerId,
-            List<BeerOrderLineDto> beerOrderLines, OrderStatusEnum orderStatus, String orderStatusCallbackUrl,
+            List<BeerOrderLineDto> beerOrderLines, BeerOrderStatusEnum orderStatus, String orderStatusCallbackUrl,
             String customerRef
     ) {
         super(id, version, createdAt, updatedAt);

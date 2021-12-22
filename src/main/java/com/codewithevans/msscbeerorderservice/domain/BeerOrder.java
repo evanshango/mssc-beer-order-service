@@ -1,6 +1,6 @@
 package com.codewithevans.msscbeerorderservice.domain;
 
-import com.codewithevans.msscbeerorderservice.web.model.OrderStatusEnum;
+import com.codewithevans.msscbeerorderservice.web.model.BeerOrderStatusEnum;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,7 +24,7 @@ public class BeerOrder extends BaseEntity {
 
     @Builder
     public BeerOrder(UUID id, Long version, Timestamp createdAt, Timestamp updatedAt, String customerRef,
-                     Customer customer, Set<BeerOrderLine> beerOrderLines, OrderStatusEnum orderStatus,
+                     Customer customer, Set<BeerOrderLine> beerOrderLines, BeerOrderStatusEnum orderStatus,
                      String orderStatusCallbackUrl
     ) {
         super(id, version, createdAt, updatedAt);
@@ -44,6 +44,6 @@ public class BeerOrder extends BaseEntity {
     @Fetch(FetchMode.JOIN)
     private Set<BeerOrderLine> beerOrderLines;
 
-    private OrderStatusEnum orderStatus = OrderStatusEnum.NEW;
+    private BeerOrderStatusEnum orderStatus = BeerOrderStatusEnum.NEW;
     private String orderStatusCallbackUrl;
 }
