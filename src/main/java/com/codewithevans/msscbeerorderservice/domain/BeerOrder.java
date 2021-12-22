@@ -1,6 +1,6 @@
 package com.codewithevans.msscbeerorderservice.domain;
 
-import com.codewithevans.msscbeerorderservice.web.model.BeerOrderStatusEnum;
+import com.codewithevans.brewery.model.BeerOrderStatusEnum;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

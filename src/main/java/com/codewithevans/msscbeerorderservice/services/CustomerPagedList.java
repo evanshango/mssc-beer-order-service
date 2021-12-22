@@ -1,6 +1,6 @@
 package com.codewithevans.msscbeerorderservice.services;
 
-import com.codewithevans.msscbeerorderservice.web.model.CustomerDto;
+import com.codewithevans.brewery.model.CustomerDto;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 

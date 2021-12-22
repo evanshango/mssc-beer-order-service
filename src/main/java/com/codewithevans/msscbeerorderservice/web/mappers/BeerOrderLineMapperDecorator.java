@@ -2,8 +2,8 @@ package com.codewithevans.msscbeerorderservice.web.mappers;
 
 import com.codewithevans.msscbeerorderservice.domain.BeerOrderLine;
 import com.codewithevans.msscbeerorderservice.services.beer.BeerService;
-import com.codewithevans.msscbeerorderservice.web.model.BeerDto;
-import com.codewithevans.msscbeerorderservice.web.model.BeerOrderLineDto;
+import com.codewithevans.brewery.model.BeerDto;
+import com.codewithevans.brewery.model.BeerOrderLineDto;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Optional;

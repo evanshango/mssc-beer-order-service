@@ -1,8 +1,8 @@
 package com.codewithevans.msscbeerorderservice.web.controllers;
 
 import com.codewithevans.msscbeerorderservice.services.BeerOrderService;
-import com.codewithevans.msscbeerorderservice.web.model.BeerOrderDto;
-import com.codewithevans.msscbeerorderservice.web.model.BeerOrderPagedList;
+import com.codewithevans.brewery.model.BeerOrderDto;
+import com.codewithevans.brewery.model.BeerOrderPagedList;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;

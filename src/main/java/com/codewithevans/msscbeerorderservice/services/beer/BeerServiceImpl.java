@@ -1,6 +1,6 @@
 package com.codewithevans.msscbeerorderservice.services.beer;
 
-import com.codewithevans.msscbeerorderservice.web.model.BeerDto;
+import com.codewithevans.brewery.model.BeerDto;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Component;

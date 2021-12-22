@@ -2,7 +2,7 @@ package com.codewithevans.msscbeerorderservice.repositories;
 
 import com.codewithevans.msscbeerorderservice.domain.BeerOrder;
 import com.codewithevans.msscbeerorderservice.domain.Customer;
-import com.codewithevans.msscbeerorderservice.web.model.BeerOrderStatusEnum;
+import com.codewithevans.brewery.model.BeerOrderStatusEnum;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

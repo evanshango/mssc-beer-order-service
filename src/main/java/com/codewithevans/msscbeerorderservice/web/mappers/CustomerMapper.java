@@ -1,7 +1,7 @@
 package com.codewithevans.msscbeerorderservice.web.mappers;
 
 import com.codewithevans.msscbeerorderservice.domain.Customer;
-import com.codewithevans.msscbeerorderservice.web.model.CustomerDto;
+import com.codewithevans.brewery.model.CustomerDto;
 import org.mapstruct.Mapper;
 
 @Mapper(uses = {DateMapper.class})

@@ -1,4 +1,4 @@
-package com.codewithevans.msscbeerorderservice.web.model;
+package com.codewithevans.brewery.model;
 
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;

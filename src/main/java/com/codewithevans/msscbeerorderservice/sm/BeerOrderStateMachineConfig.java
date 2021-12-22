@@ -1,7 +1,7 @@
 package com.codewithevans.msscbeerorderservice.sm;
 
 import com.codewithevans.msscbeerorderservice.domain.BeerOrderEventEnum;
-import com.codewithevans.msscbeerorderservice.web.model.BeerOrderStatusEnum;
+import com.codewithevans.brewery.model.BeerOrderStatusEnum;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.statemachine.config.EnableStateMachineFactory;
 import org.springframework.statemachine.config.StateMachineConfigurerAdapter;

@@ -1,7 +1,7 @@
 package com.codewithevans.msscbeerorderservice.services;
 
-import com.codewithevans.msscbeerorderservice.web.model.BeerOrderDto;
-import com.codewithevans.msscbeerorderservice.web.model.BeerOrderPagedList;
+import com.codewithevans.brewery.model.BeerOrderDto;
+import com.codewithevans.brewery.model.BeerOrderPagedList;
 import org.springframework.data.domain.Pageable;
 
 import java.util.UUID;
